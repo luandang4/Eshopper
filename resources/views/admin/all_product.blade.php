@@ -74,10 +74,10 @@
                     </span></td>
 
                     <td>
-                      <a href="{{URL::to('/editproduct/'.$pro->product_id)}}" class="active styling-edit" ui-toggle-class="" style="font-size:20px;">
+                      <a href="{{URL::to('/edit-product/'.$pro->product_id)}}" class="active styling-edit" ui-toggle-class="" style="font-size:20px;">
                         <i class="fa fa-pencil-square-o text-success text-active"></i>
                     </a>
-                      <a onclick="return confirm('Are you sure delete?')" href="{{URL::to('/delete-product/'.$pro->product_id)}}" class="active styling-edit" ui-toggle-class="" style="font-size:20px;">
+                      <a onclick="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này không?')" href="{{URL::to('/delete-product/'.$pro->product_id)}}" class="active styling-edit" ui-toggle-class="" style="font-size:20px;">
                         <i class="fa fa-times text-danger text"></i>
                     </a>
                 </td>
