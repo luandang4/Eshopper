@@ -10,14 +10,26 @@ use Illuminate\Support\Facades\Redirect;
 session_start();
 class BrandProduct extends Controller
 {
+    public function AuthLogin(){
+        $admin_id = Session::get('admin_id');
+        if($admin_id){
+            return Redirect::to('dashboard');
+        }else{
+            return Redirect::to('admin')->send();
+        }
+
+    }
+
     public function add_brand_product()
     {
+        $this->AuthLogin();
         return View('admin.add_brand_product');
     }
 
 
     public function all_brand_product()
     {
+        $this->AuthLogin();
         $all_brand_product = DB::table('tbl_brand_product')-> get();
         $manager = View('admin.all_brand_product')-> with('all_brand_product',$all_brand_product);
         return View('admin_layout')-> with('admin.all_brand_product',$manager);
@@ -51,6 +63,7 @@ class BrandProduct extends Controller
 
     public function edit_brand_product($brand_proID)
     {
+        $this->AuthLogin();
         $edit_brand_product = DB::table('tbl_brand_product')-> where('brand_id',$brand_proID)->get();
         $manager = View('admin.edit_brand_product')-> with('edit_brand_product',$edit_brand_product);
         return View('admin_layout')-> with('admin.edit_brand_product',$manager);

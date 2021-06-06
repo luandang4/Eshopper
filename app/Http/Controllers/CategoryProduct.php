@@ -10,14 +10,26 @@ use Illuminate\Support\Facades\Redirect;
 session_start();
 class CategoryProduct extends Controller
 {
+    public function AuthLogin(){
+        $admin_id = Session::get('admin_id');
+        if($admin_id){
+            return Redirect::to('dashboard');
+        }else{
+            return Redirect::to('admin')->send();
+        }
+
+    }
+
     public function add_category_product()
     {
+        $this->AuthLogin();
         return View('admin.add_category_product');
     }
 
 
     public function all_category_product()
     {
+        $this->AuthLogin();
         $all_category_product = DB::table('tbl_category_product')-> get();
         $manager = View('admin.all_category_product')-> with('all_category_product',$all_category_product);
         return View('admin_layout')-> with('admin.all_category_product',$manager);
@@ -51,6 +63,7 @@ class CategoryProduct extends Controller
 
     public function edit_category_product($category_proID)
     {
+        $this->AuthLogin();
         $edit_category_product = DB::table('tbl_category_product')-> where('category_id',$category_proID)->get();
         $manager = View('admin.edit_category_product')-> with('edit_category_product',$edit_category_product);
         return View('admin_layout')-> with('admin.edit_category_product',$manager);

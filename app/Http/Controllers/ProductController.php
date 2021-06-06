@@ -11,8 +11,19 @@ session_start();
 
 class ProductController extends Controller
 {
+    public function AuthLogin(){
+        $admin_id = Session::get('admin_id');
+        if($admin_id){
+            return Redirect::to('dashboard');
+        }else{
+            return Redirect::to('admin')->send();
+        }
+
+    }
+
     public function add_product()
     {
+        $this->AuthLogin();
         $cate_product = DB::table('tbl_category_product')-> orderby('category_id','desc')->get();
         $brand_product = DB::table('tbl_brand_product')-> orderby('brand_id','desc')->get();
         
@@ -23,6 +34,7 @@ class ProductController extends Controller
         
     public function all_product()
     {
+        $this->AuthLogin();
         $all_product = DB::table('tbl_product')
         ->join('tbl_category_product','tbl_category_product.category_id','=','tbl_product.category_id')
         ->join('tbl_brand_product','tbl_brand_product.brand_id','=','tbl_product.brand_id')
@@ -75,6 +87,7 @@ class ProductController extends Controller
 
     public function edit_product($product_proID)
     {
+        $this->AuthLogin();
         $cate_product = DB::table('tbl_category_product')-> orderby('category_id','desc')->get();
         $brand_product = DB::table('tbl_brand_product')-> orderby('brand_id','desc')->get();
 

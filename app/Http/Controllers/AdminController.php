@@ -12,11 +12,21 @@ session_start();
 
 class AdminController extends Controller
 {
+    public function AuthLogin(){
+        $admin_id = Session::get('admin_id');
+        if($admin_id){
+            return Redirect::to('dashboard');
+        }else{
+            return Redirect::to('admin')->send();
+        }
+
+    }
     public function index(){
     	return View('admin_login');
     }
 
     public function showdashboard(){
+        $this->AuthLogin();
     	return View('admin.dashboard');
     }
 
@@ -39,6 +49,7 @@ class AdminController extends Controller
 
     public function logout()
     {
+        $this->AuthLogin();
         Session::put('admin_name',null);
         Session::put('admin_id',null);
         return Redirect::to('/admin');
