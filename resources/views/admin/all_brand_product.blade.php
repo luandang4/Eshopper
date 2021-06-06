@@ -70,7 +70,7 @@
                       <a href="{{URL::to('/edit-brand-product/'.$cate_pro->brand_id)}}" class="active styling-edit" ui-toggle-class="" style="font-size:20px;">
                         <i class="fa fa-pencil-square-o text-success text-active"></i>
                     </a>
-                      <a onclick="return confirm('Are you sure delete?')" href="{{URL::to('/delete-brand-product/'.$cate_pro->brand_id)}}" class="active styling-edit" ui-toggle-class="" style="font-size:20px;">
+                      <a onclick="return confirm('Bạn có chắc chắn muốn xóa thương hiệu này không??')" href="{{URL::to('/delete-brand-product/'.$cate_pro->brand_id)}}" class="active styling-edit" ui-toggle-class="" style="font-size:20px;">
                         <i class="fa fa-times text-danger text"></i>
                     </a>
                 </td>

@@ -24,8 +24,7 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Mô tả thương hiệu</label>
-                            <textarea style="resize: none; placeholder: none;" rows="5" class="form-control"  name="brand_product_desc" id="exampleInputPassword1" >
-                            </textarea>
+                            <textarea style="resize: none; placeholder: none;" rows="5" class="form-control"  name="brand_product_desc" id="exampleInputPassword1" ></textarea>
                         </div>
                         <div class="form-group">
                             <label>Hiển thị</label>
