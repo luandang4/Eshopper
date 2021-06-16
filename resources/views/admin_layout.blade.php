@@ -81,13 +81,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- sidebar menu start-->
         <div class="leftside-navigation">
             <ul class="sidebar-menu" id="nav-accordion">
-                <li>
-                    <a class="active" href="index.html">
-                        <i class="fa fa-dashboard"></i>
-                        <span>Tổng quan</span>
-                    </a>
-                </li>
-                
                 <li class="sub-menu">
                     <a href="javascript:;">
                         <i class="fa fa-book"></i>

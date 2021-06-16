@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home | E-Shopper</title>
+    <title>Home | The Light</title>
     <link href="{{asset('public/frontend/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('public/frontend/css/font-awesome.min.css')}}" rel="stylesheet">
     <link href="{{asset('public/frontend/css/prettyPhoto.css')}}" rel="stylesheet">
@@ -32,18 +32,16 @@
                     <div class="col-sm-6">
                         <div class="contactinfo">
                             <ul class="nav nav-pills">
-                                <li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-                                <li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>
+                                <li><a href="#"><i class="fa fa-phone"></i> +84 399 715 678</a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i> thelightshop@gmail.com.com</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="social-icons pull-right">
                             <ul class="nav navbar-nav">
-                                <li><a href="https://www.facebook.com/dangvanluan1402/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                             </ul>
                         </div>
@@ -57,40 +55,16 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="logo pull-left">
-                            <a href="index.html"><img src="public/frontend/img/logo.png" alt="" /></a>
+                            <a href="index.html"><img src="public/frontend/img/your-logo.png" width="139px" height="39px" alt="" /></a>
                         </div>
-                        <div class="btn-group pull-right">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-                                    USA
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Canada</a></li>
-                                    <li><a href="#">UK</a></li>
-                                </ul>
-                            </div>
-                            
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-                                    DOLLAR
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Canadian Dollar</a></li>
-                                    <li><a href="#">Pound</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    
                     </div>
                     <div class="col-sm-8">
                         <div class="shop-menu pull-right">
                             <ul class="nav navbar-nav">
-                                <li><a href="#"><i class="fa fa-user"></i> Account</a></li>
-                                <li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
-                                <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-                                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-                                <li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+                                <li><a href="#"><i class="fa fa-user"></i> Tài khoản</a></li>
+                                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
+                                <li><a href="login.html"><i class="fa fa-lock"></i> Đăng nhập</a></li>
                             </ul>
                         </div>
                     </div>
@@ -118,11 +92,8 @@
                                         <li><a href="shop.html">Products</a></li>
                                         
                                     </ul>
-                                </li> 
-                                <li class="dropdown"><a href="#">Tin tức<i class="fa fa-angle-down"></i></a>
-                                    
-                                </li> 
-                                <li><a href="404.html">Gior hàng</a></li>
+                                </li>  
+                                <li><a href="404.html">Tin tức</a></li>
                                 <li><a href="contact-us.html">Liên hệ</a></li>
                             </ul>
                         </div>
@@ -151,39 +122,41 @@
                         <div class="carousel-inner">
                             <div class="item active">
                                 <div class="col-sm-6">
-                                    <h1><span>E</span>-SHOPPER</h1>
-                                    <h2>Free E-Commerce Template</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                    <button type="button" class="btn btn-default get">Get it now</button>
+                                    <h1><span>The Light</span></h1>
+                                    <h2>Suy nghĩ khác biệt - Kết nối tương lai</h2>
+                                    <p>Tự tin mang đến cho quý khách trải nghiệm và sự phục vụ <br> tốt nhất. Đảm bảo chất lượng, mẫu mã đang dạng, giá cả phù hợp </p>
+
+                                    <!-- <button type="button" class="btn btn-default get">Get it now</button> -->
                                 </div>
                                 <div class="col-sm-6">
-                                    <img src="public/frontend/img/girl1.jpg" class="girl img-responsive" alt="" />
-                                    <img src="public/frontend/img/pricing.png"  class="pricing" alt="" />
+                                    <img src="public/frontend/img/computer1.png" class="girl img-responsive" alt="" />
+                                    <img src="#"  class="pricing" alt="" />
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-sm-6">
-                                    <h1><span>E</span>-SHOPPER</h1>
-                                    <h2>100% Responsive Design</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                    <button type="button" class="btn btn-default get">Get it now</button>
+                                    <h1><span>The Light</span></h1>
+                                    <h2>Dễ dàng như Dell - Bền đẹp như MAC</h2>
+                                    <p>Tự tin mang đến cho quý khách trải nghiệm và sự phục vụ <br> tốt nhất. Đảm bảo chất lượng, mẫu mã đang dạng, giá cả phù hợp </p>
+
+                                    <!-- <button type="button" class="btn btn-default get">Get it now</button> -->
                                 </div>
                                 <div class="col-sm-6">
-                                    <img src="public/frontend/img/girl2.jpg" class="girl img-responsive" alt="" />
-                                    <img src="public/frontend/img/pricing.png"  class="pricing" alt="" />
+                                    <img src="public/frontend/img/computer2.jpg" class="girl img-responsive" alt="" />
+                                    <img src="#"  class="pricing" alt="" />
                                 </div>
                             </div>
                             
                             <div class="item">
                                 <div class="col-sm-6">
-                                    <h1><span>E</span>-SHOPPER</h1>
-                                    <h2>Free Ecommerce Template</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                    <button type="button" class="btn btn-default get">Get it now</button>
+                                    <h1><span>The Light</span></h1>
+                                    <h2>Nhu cầu của bạn là niềm đam mê của chúng tôi</h2>
+                                    <p>Tự tin mang đến cho quý khách trải nghiệm và sự phục vụ <br> tốt nhất. Đảm bảo chất lượng, mẫu mã đang dạng, giá cả phù hợp </p>
+                                    <!-- <button type="button" class="btn btn-default get">Get it now</button> -->
                                 </div>
                                 <div class="col-sm-6">
-                                    <img src="public/frontend/img/girl3.jpg" class="girl img-responsive" alt="" />
-                                    <img src="public/frontend/img/pricing.png" class="pricing" alt="" />
+                                    <img src="public/frontend/img/computer3.png" class="girl img-responsive" alt="" />
+                                    <img src="#" class="pricing" alt="" />
                                 </div>
                             </div>
                             
@@ -209,7 +182,7 @@
                     <div class="left-sidebar">
                         <h2>Danh mục sản phẩm</h2>
                         <div class="panel-group category-products" id="accordian"><!--category-productsr-->
-                            @foreach($category as $key => $cate)    
+                            @foreach($category as $key => $cate)    <!--CategoryController/show_category_home-->
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title"><a href="{{URL::to('/danh-muc-san-pham/'.$cate->category_id)}}">{{$cate-> category_name}}</a></h4>
@@ -217,28 +190,19 @@
                             </div>
                             @endforeach
                         </div><!--/category-products-->
-                        
+                        <h2>Thương hiệu</h2>
                         <div class="brands_products"><!--brands_products-->
-                            <h2>Thương hiệu</h2>
                             <div class="brands-name">
                                 <ul class="nav nav-pills nav-stacked">
-                                    @foreach($brand as $key => $bra) 
-                                    <li><a href="{{URL::to('/thuong-hieu-san-pham/'.$bra->brand_id)}}"> <span class="pull-right">(50)</span>{{$bra-> brand_name}}</a></li>
+                                    @foreach($brand as $key => $bra) <!--BrandController/show_brand_home-->
+                                    <li><a href="{{URL::to('/thuong-hieu-san-pham/'.$bra-> brand_id)}}"> <span class="pull-right">(50)</span>{{$bra-> brand_name}}</a></li>
                                     @endforeach
                                 </ul>
                             </div>
                         </div><!--/brands_products-->
-                        
-                        <div class="price-range"><!--price-range-->
-                            <h2>Khoảng giá</h2>
-                            <div class="well text-center">
-                               <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="100000000" data-slider-step="1000" data-slider-value="[250000,450000]" id="sl2" ><br />
-                               <b class="pull-left">0đ</b> <b class="pull-right">100000000đ</b>
-                           </div>
-                       </div><!--/price-range-->
-                       
-                       <div class="shipping text-center"><!--shipping-->
-                        <img src="public/frontend/img/shipping.jpg" alt="" />
+
+                     <div class="shipping text-center"><!--shipping-->
+                        <img src="#"  alt="" />
                     </div><!--/shipping-->
                     
                 </div>
@@ -246,9 +210,6 @@
             
             <div class="col-sm-9 padding-right">
                 @yield('content')
-                
-                
-                
                 
             </div>
         </div>
@@ -261,152 +222,11 @@
             <div class="row">
                 <div class="col-sm-2">
                     <div class="companyinfo">
-                        <h2><span>e</span>-shopper</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
-                    </div>
-                </div>
-                <div class="col-sm-7">
-                    <div class="col-sm-3">
-                        <div class="video-gallery text-center">
-                            <a href="#">
-                                <div class="iframe-img">
-                                    <img src="public/frontend/img/iframe1.png" alt="" />
-                                </div>
-                                <div class="overlay-icon">
-                                    <i class="fa fa-play-circle-o"></i>
-                                </div>
-                            </a>
-                            <p>Circle of Hands</p>
-                            <h2>24 DEC 2014</h2>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-3">
-                        <div class="video-gallery text-center">
-                            <a href="#">
-                                <div class="iframe-img">
-                                    <img src="public/frontend/img/iframe2.png" alt="" />
-                                </div>
-                                <div class="overlay-icon">
-                                    <i class="fa fa-play-circle-o"></i>
-                                </div>
-                            </a>
-                            <p>Circle of Hands</p>
-                            <h2>24 DEC 2014</h2>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-3">
-                        <div class="video-gallery text-center">
-                            <a href="#">
-                                <div class="iframe-img">
-                                    <img src="public/frontend/img/iframe3.png" alt="" />
-                                </div>
-                                <div class="overlay-icon">
-                                    <i class="fa fa-play-circle-o"></i>
-                                </div>
-                            </a>
-                            <p>Circle of Hands</p>
-                            <h2>24 DEC 2014</h2>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-3">
-                        <div class="video-gallery text-center">
-                            <a href="#">
-                                <div class="iframe-img">
-                                    <img src="public/frontend/img/iframe4.png" alt="" />
-                                </div>
-                                <div class="overlay-icon">
-                                    <i class="fa fa-play-circle-o"></i>
-                                </div>
-                            </a>
-                            <p>Circle of Hands</p>
-                            <h2>24 DEC 2014</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="address">
-                        <img src="public/frontend/img/map.png" alt="" />
-                        <p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="footer-widget">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2">
-                    <div class="single-widget">
-                        <h2>Service</h2>
-                        <ul class="nav nav-pills nav-stacked">
-                            <li><a href="#">Online Help</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Order Status</a></li>
-                            <li><a href="#">Change Location</a></li>
-                            <li><a href="#">FAQ’s</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="single-widget">
-                        <h2>Quock Shop</h2>
-                        <ul class="nav nav-pills nav-stacked">
-                            <li><a href="#">T-Shirt</a></li>
-                            <li><a href="#">Mens</a></li>
-                            <li><a href="#">Womens</a></li>
-                            <li><a href="#">Gift Cards</a></li>
-                            <li><a href="#">Shoes</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="single-widget">
-                        <h2>Policies</h2>
-                        <ul class="nav nav-pills nav-stacked">
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Privecy Policy</a></li>
-                            <li><a href="#">Refund Policy</a></li>
-                            <li><a href="#">Billing System</a></li>
-                            <li><a href="#">Ticket System</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="single-widget">
-                        <h2>About Shopper</h2>
-                        <ul class="nav nav-pills nav-stacked">
-                            <li><a href="#">Company Information</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Store Location</a></li>
-                            <li><a href="#">Affillate Program</a></li>
-                            <li><a href="#">Copyright</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-sm-offset-1">
-                    <div class="single-widget">
-                        <h2>About Shopper</h2>
-                        <form action="#" class="searchform">
-                            <input type="text" placeholder="Your email address" />
-                            <button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
-                            <p>Get the most recent updates from <br />our site and be updated your self...</p>
-                        </form>
+                        <h2><span>The Light</span>shopper</h2>
                     </div>
                 </div>
                 
-            </div>
-        </div>
-    </div>
-    
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
-                <p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
+                
             </div>
         </div>
     </div>

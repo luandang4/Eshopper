@@ -20,6 +20,10 @@ Route::get('/trang-chu', 'HomeController@index');
 //danh mục sản phẩm trang chủ
 Route::get('/danh-muc-san-pham/{category_proID}', 'CategoryProduct@show_category_home');
 
+//thương hiệu sản phẩm trang chủ
+Route::get('/thuong-hieu-san-pham/{brand_proID}', 'BrandProduct@show_brand_home');
+
+
 //backend
 Route::get('/admin', 'AdminController@index');
 Route::get('/dashboard', 'AdminController@showdashboard');
