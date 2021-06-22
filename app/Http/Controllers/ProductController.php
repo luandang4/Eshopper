@@ -128,4 +128,23 @@ class ProductController extends Controller
             return Redirect::to('all-product');
         }
     }
+
+    public function details_product($product_proID)
+    {
+        $cate_product = DB::table('tbl_category_product')->where('category_status','1')-> orderby('category_id','desc')->get();
+        $brand_product = DB::table('tbl_brand_product')->where('brand_status','1')-> orderby('brand_id','desc')->get();
+        $details_product = DB::table('tbl_product')
+        ->join('tbl_category_product','tbl_category_product.category_id','=','tbl_product.category_id')
+        ->join('tbl_brand_product','tbl_brand_product.brand_id','=','tbl_product.brand_id')->where('tbl_product.product_id',$product_proID)->get();
+
+        foreach ($details_product as $key => $value) {
+            $brands_id = $value ->brand_id;
+        }
+
+        $related_product = DB::table('tbl_product')
+        ->join('tbl_category_product','tbl_category_product.category_id','=','tbl_product.category_id')
+        ->join('tbl_brand_product','tbl_brand_product.brand_id','=','tbl_product.brand_id')->where('tbl_brand_product.brand_id',$brands_id)->whereNotIn('tbl_product.product_id',[$product_proID])->get();
+
+        return View('pages.product.show_details')->with('category',$cate_product)->with('brand',$brand_product)->with('product_details',$details_product)->with('related',$related_product);  
+    }
 }
