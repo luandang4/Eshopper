@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Giỏ hàng</title>
+	<title>Tin tức</title>
 	<link href="{{('public/frontend/css/bootstrap.min.css')}}" rel="stylesheet">
 	<link href="{{('public/frontend/css/font-awesome.min.css')}}" rel="stylesheet">
 	<link href="{{('public/frontend/css/prettyPhoto.css')}}" rel="stylesheet">
@@ -71,7 +71,9 @@
 				</div>
 			</div>
 		</div><!--/header-middle-->
-
+	<div class="content">
+		
+	</div>	
 		
 	</header><!--/header-->
 
