@@ -5,40 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Giỏ hàng</title>
-    <link href="{{('public/frontend/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{('public/frontend/css/font-awesome.min.css')}}" rel="stylesheet">
-    <link href="{{('public/frontend/css/prettyPhoto.css')}}" rel="stylesheet">
-    <link href="{{('public/frontend/css/price-range.css')}}" rel="stylesheet">
-    <link href="{{('public/frontend/css/animate.css')}}" rel="stylesheet">
-	<link href="{{('public/frontend/css/main.css')}}" rel="stylesheet">
-	<link href="{{('public/frontend/css/responsive.css')}}" rel="stylesheet">
+    <title>Home | The Light</title>
+    <link href="{{asset('public/frontend/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('public/frontend/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{asset('public/frontend/css/prettyPhoto.css')}}" rel="stylesheet">
+    <link href="{{asset('public/frontend/css/price-range.css')}}" rel="stylesheet">
+    <link href="{{asset('public/frontend/css/animate.css')}}" rel="stylesheet">
+    <link href="{{asset('public/frontend/css/main.css')}}" rel="stylesheet">
+    <link href="{{asset('public/frontend/css/responsive.css')}}" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+<![endif]-->       
+    <link rel="shortcut icon" href="{{('public/frontend/img/favicon.ico')}}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{('public/frontend/img/apple-touch-icon-144-precomposed.png')}}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{('public/frontend/img/apple-touch-icon-114-precomposed.png')}}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{('public/frontend/img/apple-touch-icon-72-precomposed.png')}}">
+    <link rel="apple-touch-icon-precomposed" href="{{('public/frontend/img/apple-touch-icon-57-precomposed.png')}}">
 </head><!--/head-->
-<script type="text/javascript">
-	function cong(){
-		var t = document.getElementById("textbox").value;
-		document.getElementById("textbox").value = parseInt(t) + 1;
-	}
 
-	function tru(){
-		var t = document.getElementById("textbox").value;
-		if(parseInt(t) > 1){
-			document.getElementById("textbox").value = parseInt(t) - 1;	
-		}
-		
-	}
-</script>
 <body>
-	<header id="header"><!--header-->
+    <header id="header"><!--header-->
         <div class="header_top"><!--header_top-->
             <div class="container">
                 <div class="row">
@@ -46,7 +33,7 @@
                         <div class="contactinfo">
                             <ul class="nav nav-pills">
                                 <li><a href="#"><i class="fa fa-phone"></i> +84 399 715 678</a></li>
-                                <li><a href="#"><i class="fa fa-envelope"></i> thelightshop@gmail.com.com</a></li>
+                                <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"><i class="fa fa-envelope"></i> thelightshop@gmail.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -72,105 +59,46 @@
                         </div>
 
                     </div>
-                    <div class="col-sm-8">
-                        <div class="shop-menu pull-right">
-                            <ul class="nav navbar-nav">
-                                <li><a href="#"><i class="fa fa-user"></i> Tài khoản</a></li>
-                                <li><a href="{{URL::to('/show-cart')}}"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
-                                <li><a href="{{URL::to('/login')}}"><i class="fa fa-lock"></i> Đăng nhập</a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div><!--/header-middle-->
         
     </header><!--/header-->
 
-	<section id="cart_items">
-		<div class="container">
-			<div class="breadcrumbs">
-				<ol class="breadcrumb">
-				  <li><a href="{{URL::to('/trang-chu')}}">Trang chủ</a></li>
-				  <li><a href="{{URL::to('/show-cart')}}">Giỏ hàng</a></li>
-				</ol>
-			</div>
-			<div class="table-responsive cart_info">
-				<?php 
-				$content =  Cart::content();
-
-
-				?>
-				<table class="table table-condensed">
-					<thead>
-						<tr class="cart_menu">
-							<td class="image">Sản phẩm</td>
-							<td class="description"></td>
-							<td class="price">Đơn giá</td>
-							<td class="quantity">Số lượng</td>
-							<td class="total">Số tiền</td>
-							<td></td>
-						</tr>
-					</thead>
-					<tbody>
-						@foreach($content as $v_value)
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="{{URL::to('public/upload/product/'.$v_value-> options-> image)}}" width="50" alt=""></a>
-							</td>
-							<td class="cart_description">
-								<h4><a href="">{{$v_value -> name}}</a></h4>
-								<p>{{$v_value -> id}}</p>
-							</td>
-							<td class="cart_price">
-								<p>{{number_format($v_value -> price).' đ'}}</p>
-							</td>
-							<td class="cart_quantity">
-								<div class="cart_quantity_button">
-									<input type="button" class="cart_quantity_down" onclick="tru()" value="-">
-									<input type="text" id="textbox" name="quantity" value="{{$v_value -> qty}}" autocomplete="on" size="1">
-									<input type="button" class="cart_quantity_down" onclick="cong()" value="+">
-								</div>
-							</td>
-							
-							<td class="cart_total">
-								<p class="cart_total_price">
-									<?php 
-									$subtotal = $v_value -> price * $v_value->qty;
-									echo number_format($subtotal).' đ';
-									?>
-								</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href="{{URL::to('/delete-to-cart/'.$v_value->rowId)}}"><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
-						@endforeach
-					</tbody>
-				</table>
-			</div>
-		</div>
-	</section> <!--/#cart_items-->
-
-	<section id="do_action">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6" style="width: 100%;">
-					<div class="total_area">
-						<ul >
-							<li>Tổng tiền <span>{{Cart::subtotal()}} đ</span></li>
-							<li>Phí vẫn chuyển <span>Free</span></li>
-							<li>Thành tiền <span>{{Cart::subtotal()}} đ</span></li>
-						</ul>
-							<a class="btn btn-default update" href="">Cập nhật</a>
-							<a class="btn btn-default check_out" href="">Thanh toán</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section><!--/#do_action-->
-
-	<footer id="footer"><!--Footer-->
+    <section id="form" style="margin-top: 50px;"><!--form-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-1">
+                    <div style="padding-left: 200px; width: 600px;" class="login-form"><!--login form-->
+                        <h2>Đăng nhập</h2>
+                        <?php 
+                            $message = Session::get('message');
+                            if($message)
+                            {
+                                echo $message;
+                                Session::put('message',null);
+                            }
+                        ?>
+                        <form action="{{URL::to('/login-account')}}" method="post">
+                            {{ csrf_field() }}
+                            <input type="text" name="user_name" placeholder="Tên đăng nhập" />
+                            <input type="password" name="user_password" placeholder="Mật khẩu" />
+                            <span>
+                                <input type="checkbox" class="checkbox"> 
+                                Nhớ mật khẩu
+                            </span>
+                            <button type="submit" class="btn btn-default">Đăng nhập</button>
+                            <p> <br></p>
+                            <p> </p>
+                            <a  href="">Quên mật khẩu?</a>
+                            <a style="float: right;" href="{{URL::to('/sign-up')}}">Tạo tài khoản mới</a>
+                        </form>
+                    </div><!--/login form-->
+                </div>
+            </div>
+        </div>
+    </section><!--/form-->
+    <footer id="footer"><!--Footer-->
         <div class="footer-top">
             <div class="container">
                 <div class="row">
@@ -180,7 +108,7 @@
                             <p>Tự tin mang đến cho quý khách trải nghiệm và sự phục vụ tốt nhất. Đảm bảo chất lượng, mẫu mã đang dạng, giá cả phù hợp</p>
                         </div>
                     </div>
-                   
+
                     <div class="col-sm-3">
                         <div class="address">
                             <img src="images/home/map.png" alt="" />
@@ -266,13 +194,14 @@
         </div>
         
     </footer><!--/Footer-->
-	
 
 
-    <script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
+
+    <script src="{{asset('public/frontend/js/jquery.js')}}"></script>
+    <script src="{{asset('public/frontend/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('public/frontend/js/jquery.scrollUp.min.js')}}"></script>
+    <script src="{{asset('public/frontend/js/price-range.js')}}"></script>
+    <script src="{{asset('public/frontend/js/jquery.prettyPhoto.js')}}"></script>
+    <script src="{{asset('public/frontend/js/main.js')}}"></script>
 </body>
 </html>

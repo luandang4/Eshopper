@@ -1,3 +1,4 @@
+/* contact page*/
 .content{
 	width: 1150px;
 	background-position: top;
@@ -5,8 +6,12 @@
 	color: #696763;
 }
 
+.content h1{
+	color: #FE980F;
+}
+
 .tieude{
-	border-bottom: 1px solid grey;
+	border-bottom: 1px inset;
 }
 
 .tieude .info{
@@ -24,11 +29,12 @@
 .input{
 	width: 540px;
 	margin: 20px 10px 10px 5px;
-	
 	float: left;
 	font-size: 20px;
 }
-
+a{
+	color: #fdb45e;
+}
 
 input{
 	border: 1px solid grey;
@@ -41,7 +47,7 @@ textarea{
 	background-color: white;
 }
 
-button{
+.input button{
 	width: 80px;
 	height: 40px;
 	margin: 0px 240px;
@@ -51,7 +57,7 @@ button{
 	border-radius: 10px;
 }
 
-button:hover{
+.input button:hover{
 	font-size: 23px;
 }
 .email{
@@ -70,11 +76,11 @@ button:hover{
 }
 
 .main{
-	border-bottom: 1px solid grey;
+	border-bottom: 1px inset;
 }
 
 .fan{
-	border-bottom: 1px solid grey;
+	border-bottom: 1px inset;
 }
 
 .fanpage{
@@ -92,3 +98,85 @@ button:hover{
 	float: left;
 	margin: 20px 175px;
 }
+
+/* blog page*/
+
+.blog {
+	color: ##696763;
+}
+
+.time{
+	float: left;
+	background: url(../img/bg-time.png) no-repeat left top;
+	color: #fff;
+	font-family: "Oswald";
+	display: block;
+	height: 42px;
+	width: 42px;
+	margin: 0 5px 5px 0;
+	padding: 0 5px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.time p {
+	padding-left: 50px;
+}
+
+.blog h3{
+	color: #fdb45e;
+	text-decoration: none;
+	font-family: "Oswald";
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.blog h5{
+	padding: 0 0 15px 30px;
+}
+
+.info-blog{
+	color: #626161;
+	font-size: 12px;
+	line-height: 24px;
+	padding: 0 0 6px;
+	text-transform: uppercase;
+	float: inherit;
+}
+
+.frame{
+	text-align: center;
+}
+
+.main-content{
+	width: 705px;
+	float: left;
+	border-right: 1px inset;
+	padding-right: 15px;
+
+}
+
+.main-content button{
+	border: 0px;
+	color: #fdb45e;
+	background-color: transparent;
+}
+
+.list-blog{
+	padding-left: 5px;
+	width: 380px;
+	float: left;
+
+}
+
+#read-more{
+	float: right;
+	padding-right: 15px;
+}
+ .comments{
+ 	padding-left: 5px;
+ }
+

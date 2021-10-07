@@ -20,7 +20,7 @@
 <form class="box" action="{{URL::to('/admin-dashboard')}}" method="post">
   {{ csrf_field() }}
   <h1>Đăng nhập</h1>
-  <input type="text" name="admin_email" placeholder="Tên đăng nhập">
+  <input type="text" name="admin_email" placeholder="Email">
   <input type="password" name="admin_password" placeholder="Mật khẩu">
   <div class="clearfix"></div>
   <input type="submit" name="" value="Đăng nhập" name="login">

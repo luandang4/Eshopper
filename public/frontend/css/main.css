@@ -255,7 +255,6 @@ a#scrollUp i{
 .search_box input {
   background: #F0F0E9;
   border: medium none;
-  color: #B2B2B2;
   font-family: 'roboto';
   font-size: 12px;
   font-weight: 300;
@@ -1704,7 +1703,7 @@ h2.title {
 }
 
 .total_area ul li {
-  background:#E6E4DF;
+  background:#f8f8f7;
   color: #696763;
   margin-top: 10px;
   padding: 7px 20px;

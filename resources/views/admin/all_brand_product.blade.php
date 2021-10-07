@@ -20,10 +20,10 @@
                 <tr>
                     <th style="width:20px;">
                         <label class="i-checks m-b-none">
-                            <input type="checkbox"><i></i>
+                           
                         </label>
                     </th>
-                    <th>Tên danh mục</th>
+                    <th>Tên thương hiệu</th>
                     <th>Hiển thị</th>
 
                     <th style="width:30px;"></th>
@@ -32,7 +32,7 @@
             <tbody>
                 @foreach($all_brand_product as $key => $cate_pro)
                 <tr>
-                    <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
+                    <td><label class="i-checks m-b-none"><i></i></label></td>
                     <td>{{$cate_pro -> brand_name}}</td>
                     <td><span class="text-ellipsis">
                         <?php

@@ -74,3 +74,9 @@ Route::get('/delete-to-cart/{rowId}', 'CartController@delete_to_cart');
 //---------stattic page
 Route::get('/contact', 'StaticPageController@contact');
 Route::get('/blog', 'StaticPageController@blog');
+
+//----------login
+Route::get('/login', 'LoginController@login');
+Route::get('/sign-up', 'LoginController@sign_up');
+Route::get('/logout-user', 'LoginController@logout_user');
+Route::post('/login-account', 'LoginController@login_account');
