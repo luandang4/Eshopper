@@ -20,10 +20,10 @@ Build a minimum of four models (excluding User authentication for now):
 
 1. **Product**:
   - Stores individual products and their details
-    - has_many :line_items, dependent: :destroy  
+    - has_many :order_details, dependent: :destroy  
 
 
-2. **LineItem**:
+2. **OrderDetail**:
   - Join Table which bridges Product and Cart. Needed to add multiple quantities of each product to Cart (see below)
     - belongs_to :product
     - belongs_to :cart
@@ -31,14 +31,14 @@ Build a minimum of four models (excluding User authentication for now):
 
 
 3. **Cart**:
-  - Create a new instance each time a new session occurs to keep track of added products throughout the app. Used to store Product LineItems before proceeding to new Order checkout
-    - has_many :line_items, dependent: :destroy
-    - has_many :products, through: :line_items  
+  - Create a new instance each time a new session occurs to keep track of added products throughout the app. Used to store Product OrderDetail before proceeding to new Order checkout
+    - has_many :order_details, dependent: :destroy
+    - has_many :products, through: :order_details  
 
 
 4. **Order**:
-  - New model created from Cart page after user is happy to checkout. Model captures user payment and shipping details and then LineItems are transferred from Cart to Order
-    - has_many :line_items, dependent: :destroy  
+  - New model created from Cart page after user is happy to checkout. Model captures user payment and shipping details and then OrderDetail are transferred from Cart to Order
+    - has_many :order_details, dependent: :destroy  
 
 **Rails generate Model commands**  
 Note: remember to set default values in atom Rails migration tables prior to rake db:migrate. Syntax: ```, default: value```
@@ -46,7 +46,7 @@ Note: remember to set default values in atom Rails migration tables prior to rak
 ```ruby
 rails g model Product name:string price:decimal
 rails g model Cart  
-rails g model LineItem quantity:integer product_id:integer cart_id:integer order_id:integer
+rails g model OrderDetail quantity:integer product_id:integer cart_id:integer order_id:integer
 rails g model Order name:string email:string address:text
 ```
 
